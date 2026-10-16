@@ -45,7 +45,7 @@ jobs:
           role-to-assume: ${{ inputs.aws-role-arn }}
           aws-region: ${{ inputs.aws-region }}
       # The release job rewrites this ref to the exact release tag (D11).
-      - uses: sre-ai-tools/review-personas@main
+      - uses: sre-ai-tools/review-personas@f6f14ffdd412fd2f73bfbe3c4d62c97a2019bef9
         with:
           config-path: ${{ inputs.config-path }}
           personas: ${{ inputs.personas }}
